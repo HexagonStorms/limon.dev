@@ -15,5 +15,8 @@
     @yield('content')
 
     @yield('bottomscript')
-    <script src="/js/app.js"></script>
+    <script type="text/javascript" src="/js/skrollr.min.js"></script>
+    <script>
+        var s = skrollr.init();
+    </script>
 </body>

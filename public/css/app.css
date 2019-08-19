@@ -10645,6 +10645,27 @@ a.text-dark:focus {
 }
 
 body {
-  background: black;
+  background: white;
+}
+
+.parallax {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100px;
+}
+
+.layers {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 

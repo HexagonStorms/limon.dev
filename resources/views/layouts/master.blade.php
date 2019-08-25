@@ -16,7 +16,15 @@
 
     @yield('bottomscript')
     <script type="text/javascript" src="/js/skrollr.min.js"></script>
-    <script>
-        var s = skrollr.init();
+    <script type="text/javascript">
+        var s = skrollr.init({
+            edgeStrategy: 'set',
+            easing: {
+                WTF: Math.random,
+                inverted: function(p) {
+                    return 1-p;
+                }
+            }
+        });
     </script>
 </body>

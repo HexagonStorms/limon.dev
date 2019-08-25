@@ -10664,8 +10664,20 @@ body {
 
 .layer {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
+}
+
+.landscape {
+  height: 719px;
+}
+
+.canvas-greenery {
+  bottom: 140px;
+}
+
+.canvas-rocks {
+  bottom: 80px;
 }
 

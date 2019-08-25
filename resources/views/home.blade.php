@@ -4,28 +4,34 @@
 
 @section('content')
 
-    <div class="container-fluid p-0">
+    <div class="container-fluid p-0" style="height: 3000px">
 
-        <div class="landscape layers">
+        <div class="landscape layers" data-parallax-strength="0.6">
 
-            {{--@include('landscape.greenery')--}}
+            <div class="layer skrollable skrollable-between canvas-rocks">
+                <img width="100%" src="/img/rocks2.png" />
+            </div>
 
-            {{--@include('landscape.hay')--}}
+            <div class="layer skrollable skrollable-between canvas-greenery"
+                 data--900="transform:translate3d(0,-40px,0)" data-900="transform:translate3d(0,40px,0)">
+                @include('landscape.greenery')
+            </div>
 
-            {{--<img width="100%" src="/img/rocks2.png" />--}}
+            <div class="layer skrollable skrollable-between canvas-hay" data--900="transform:translate3d(0,15px,0)" data-900="transform:translate3d(0,-15px,0)">
+                @include('landscape.hay')
+            </div>
 
-            <div class="layer skrollable skrollable-between" data-parallax="0.8" data-x="342" data-y="-17" data-required="true" style="left: 531.347px; top: -26.412px; transform: translate3d(0px, 0px, 0px); transform-origin: 122.653px 524.112px;" data--553="transform:translate3d(0,-84px,0)" data-553="transform:translate3d(0,84px,0)">
+
+            <div class="layer skrollable skrollable-between canvas-trees">
                 @include('landscape.trees')
             </div>
 
 
-            <div class="layer skrollable skrollable-between" data-parallax="0.8" data-x="342" data-y="-17" data-required="true" style="left: 531.347px; top: -26.412px; transform: translate3d(0px, 0px, 0px); transform-origin: 122.653px 524.112px;" data--553="transform:translate3d(0,-84px,0)" data-553="transform:translate3d(0,84px,0)">
+            <div class="layer skrollable skrollable-between canvas-leaves">
                 @include('landscape.leaves')
             </div>
 
         </div>
-
-
     </div>
 
 

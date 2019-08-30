@@ -34,7 +34,7 @@ body {
 }
 
 .landscape {
-    height: 719px;
+    height: 100vh;
 }
 
 .canvas-greenery {
@@ -43,4 +43,12 @@ body {
 
 .canvas-rocks {
     bottom: 80px;
+}
+
+.canvas-hay {
+    bottom: 20px;
+}
+
+.canvas-trees-img {
+    height: 100vh;
 }

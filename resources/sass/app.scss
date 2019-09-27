@@ -104,3 +104,81 @@ p {
     transform-origin: top;
 }
 .light-grey{background-color:#ecf0f1;}
+
+/*
+blurb
+ */
+
+//#blurb:before {
+//    content: ' ';
+//    display: block;
+//    height: 400px;
+//    width: 100%;
+//    background: #02000a;
+//    -webkit-transform: skewY(-3deg) translateZ(0);
+//    -moz-transform: skewY(-3deg) translateZ(0);
+//    -ms-transform: skewY(-3deg) translateZ(0);
+//    -o-transform: skewY(-3deg) translateZ(0);
+//    transform: skewY(-3deg) translateZ(0);
+//    position: absolute;
+//    left: 0;
+//    bottom: -50px;
+//    z-index: 1;
+//    overflow: hidden;
+//}
+#blurb .contents {
+    position: relative;
+    z-index: 8;
+}
+#blurb h2 {
+    color: #fff;
+    text-align: left;
+    font-size: 100px;
+}
+#blurb h2 span {
+    display: block;
+    line-height: 77%;
+
+}
+#blurb h2 span.line-1 {
+    font-weight: 200;
+    font-size: 100px;
+    line-height: 100%;
+
+}
+#blurb h2 span.line-2 {
+    font-weight: 300;
+    font-size: 155px;
+}
+#blurb h2 span.line-3 {
+    font-weight: 700;
+    font-size: 185px;
+    margin-top: 6px;
+}
+#blurb hr {
+    border: none;
+    height: 1px;
+    width: 300px;
+    margin: 30px 0 25px;
+    background: #ff3535; /* Old browsers */
+    background: -moz-linear-gradient(left,  #ff3535 0%, #ffb22d 19%, #f7df00 37%, #26ff6c 56%, #268bff 76%, #8b3cff 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ff3535), color-stop(19%,#ffb22d), color-stop(37%,#f7df00), color-stop(56%,#26ff6c), color-stop(76%,#268bff), color-stop(100%,#8b3cff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  #ff3535 0%,#ffb22d 19%,#f7df00 37%,#26ff6c 56%,#268bff 76%,#8b3cff 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  #ff3535 0%,#ffb22d 19%,#f7df00 37%,#26ff6c 56%,#268bff 76%,#8b3cff 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  #ff3535 0%,#ffb22d 19%,#f7df00 37%,#26ff6c 56%,#268bff 76%,#8b3cff 100%); /* IE10+ */
+    background: linear-gradient(to right,  #ff3535 0%,#ffb22d 19%,#f7df00 37%,#26ff6c 56%,#268bff 76%,#8b3cff 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3535', endColorstr='#8b3cff',GradientType=1 ); /* IE6-9 */
+}
+#blurb p {
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    padding-right: 15%;
+    line-height: 43px;
+    color: rgb(214, 216, 255);
+    margin: 0;
+}
+#blurb p strong {
+    font-weight: 400;
+}
+

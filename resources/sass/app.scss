@@ -27,9 +27,10 @@ p {
 }
 
 .about-section {
-    padding-top: 8rem;
+    padding-top: 10rem;
+    height: 1100px;
     // this should be media queried to be much smaller on mobile devices
-    padding-bottom: 12rem;
+    padding-bottom: 15rem;
 }
 .create-section {
     padding-top: 2.5rem;
@@ -148,17 +149,17 @@ blurb
 }
 #blurb h2 span.line-2 {
     font-weight: 300;
-    font-size: 155px;
+    font-size: 120px;
 }
 #blurb h2 span.line-3 {
     font-weight: 700;
-    font-size: 185px;
+    font-size: 140px;
     margin-top: 6px;
 }
 #blurb hr {
     border: none;
     height: 1px;
-    width: 300px;
+    width: 400px;
     margin: 30px 0 25px;
     background: #ff3535; /* Old browsers */
     background: -moz-linear-gradient(left,  #ff3535 0%, #ffb22d 19%, #f7df00 37%, #26ff6c 56%, #268bff 76%, #8b3cff 100%); /* FF3.6+ */
@@ -170,7 +171,7 @@ blurb
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3535', endColorstr='#8b3cff',GradientType=1 ); /* IE6-9 */
 }
 #blurb p {
-    font-size: 30px;
+    font-size: 1.5em;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     padding-right: 15%;

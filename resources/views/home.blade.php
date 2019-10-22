@@ -6,8 +6,8 @@
 
     <div class="container-fluid p-0" style="height: 3000px">
 
-        <div class="landscape">
-            <div class="landscape layers" data-parallax-strength="0.6">
+        <div class="row landscape">
+            <div class="row landscape layers" data-parallax-strength="0.6">
 
                 <div class="layer skrollable skrollable-between canvas-rocks" data--900="transform:translate3d(0,-120px,0)" data-900="transform:translate3d(0,120px,0)">
                     <img width="100%" src="/img/rocks2.png" />
@@ -36,7 +36,7 @@
         </div>
 
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+        <nav class="row navbar navbar-expand-md navbar-dark bg-primary">
             <div class="d-flex w-50 order-0">
                 <a class="navbar-brand mr-1" href="#">Josue's Logo</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
@@ -60,49 +60,133 @@
         </nav>
 
         <section id="blurb" class="row bg-primary position-relative justify-content-center about-section">
-            <div  class="col-sm-8 text-center">
+            <div class="col-sm-8 text-center">
                 <h2>
-                    <span class="line-1 item" style="opacity: 0; transform: matrix(1, 0, 0, 1, -50, 50);">DESIGNER &</span>
-                    <span class="line-2 item" style="opacity: 0; transform: matrix(1, 0, 0, 1, -50, 50);">DEVELOPER</span>
-                    <span class="line-3 item" style="opacity: 0; transform: matrix(1, 0, 0, 1, -50, 50);">I'M JOSUE</span>
+                    <span class="line-1 item" style="opacity: 0; transform: matrix(1, 0, 0, 1, -50, 50);">Top Shelf</span>
+                    <span class="line-2 item" style="opacity: 0; transform: matrix(1, 0, 0, 1, -50, 50);">Web Design &</span>
+                    <span class="line-3 item" style="opacity: 0; transform: matrix(1, 0, 0, 1, -50, 50);">DEVELOPMENT</span>
                     <hr class="item" style="opacity: 0; transform: matrix(1, 0, 0, 1, -50, 50);">
                 </h2>
                 <p class="text-left item">
-                    My passion is creating beautiful applications that tell a <b>story</b>.
+                    My name is Josue and I love creating applications that tell a <b>story</b>.
                 </p>
                 <p class="text-left item">
-                    Each is crafted with a bug-free guarantee, SEO ready, & with my support every step of the way.
+                    Each project is crafted with a bug-free guarantee, SEO ready, & with my support every step of the way.
                 </p>
             </div>
         </section>
 
-        <div class="position-relative" id="test">
+        <div class="position-relative row" id="test">
             <svg id="" preserveAspectRatio="xMidYMax meet" class="svg-separator sep2" viewBox="0 0 1600 200" style="display: block;" data-height="200">
                 <polygon class="" style="fill: rgb(52, 58, 64);" points="-4,0 1604,198 1604,204 -4,204 	"></polygon>
                 <polygon class="" style="opacity: 1;fill: #6d93c1;" points="1604,198 1604,186 -4,0 -4,0 	"></polygon>
                 <polygon class="" style="opacity: 1;fill: #533b75;" points="1604,186 1604,174 -4,0 -4,0 	"></polygon></svg>
         </div>
 
-        <section class="row bg-dark create-section justify-content-center">
-            <div class="col-md-3">
-                <h2 class="text-center">Past Work</h2>
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="https://via.placeholder.com/250" class="d-block w-100" alt="...">
+        <section class="row bg-dark work-section justify-content-center position-relative">
+            <div class="row">
+                <div class="col text-center">
+                    <h2>The things</h2>
+                    <h2>We are able to do</h2>
+                </div>
+            </div>
+            <div class="row my-5">
+                <div class="col">
+                    <div class="row text-center features">
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-xs-12 feature-block">
+                            <div>
+                                <div class="feature-icon-box">
+                                    <i class="fas fa-2x fa-phone-laptop"></i>
+                                </div>
+                            </div>
+                            <span class="feature-header">App Development</span>
                         </div>
-                        <div class="carousel-item">
-                            <img src="https://via.placeholder.com/249" class="d-block w-100" alt="...">
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-xs-12 feature-block">
+                            <div>
+                                <div class="feature-icon-box">
+                                    <i class="fas fa-2x fa-chart-scatter"></i>
+                                </div>
+                            </div>
+                            <span class="feature-header">Data Visualization</span>
                         </div>
-                        <div class="carousel-item">
-                            <img src="https://via.placeholder.com/248" class="d-block w-100" alt="...">
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-xs-12 feature-block">
+                            <div>
+                                <div class="feature-icon-box">
+                                    <i class="fab fa-2x fa-figma"></i>
+                                </div>
+                            </div>
+                            <span class="feature-header">Logo & Brand Design</span>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-xs-12 feature-block">
+                            <div>
+                                <div class="feature-icon-box">
+                                    <i class="fas fa-2x fa-chalkboard"></i>
+                                </div>
+                            </div>
+                            <span class="feature-header">Consulting</span>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-xs-12 feature-block">
+                            <div>
+                                <div class="feature-icon-box">
+                                    <i class="fas fa-2x fa-shopping-cart"></i>
+                                </div>
+                            </div>
+                            <span class="feature-header">eCommerce</span>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-xs-12 feature-block">
+                            <div>
+                                <div class="feature-icon-box">
+                                    <i class="fab fa-2x fa-wordpress"></i>
+                                </div>
+                            </div>
+                            <span class="feature-header">Wordpress</span>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-xs-12 feature-block">
+                            <div>
+                                <div class="feature-icon-box">
+                                    <i class="fas fa-2x fa-chart-area"></i>
+                                </div>
+                            </div>
+                            <span class="feature-header">Analytics</span>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-xs-12 feature-block">
+                            <div>
+                                <div class="feature-icon-box">
+                                    <i class="fas fa-2x fa-browser"></i>
+                                </div>
+                            </div>
+                            <span class="feature-header">Custom Websites</span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-5 text-center">
-                <h2>What I Do</h2>
-            </div>
+
         </section>
+
+        <div class="row position-relative">
+            <div class="row layers">
+
+                <div class="layer stalactite-1">
+                    <img src="/img/stalag1.png" class="w-100">
+                </div>
+
+                <div class="layer stalactite-2">
+                    <img src="/img/stalag2.png" class="w-100">
+                </div>
+
+                <div class="layer stalactite-3">
+                    <img src="/img/stalag3.png" class="w-100">
+                </div>
+            </div>
+        </div>
+
+        {{--<div class="position-relative row">--}}
+            {{--<svg id="" preserveAspectRatio="xMidYMax meet" class="svg-separator sep2" viewBox="0 0 1600 200" style="display: block;" data-height="200">--}}
+                {{--curved row separater in the future--}}
+                {{--<polygon class="" style="fill: blue;" points="2000,0 1604,198 1604,204 -4,204 	"></polygon>--}}
+                {{--<polygon class="" style="opacity: 1;fill: #6d93c1;" points="1604,198 1604,186 -4,0 -4,0 	"></polygon>--}}
+                {{--<polygon class="" style="opacity: 1;fill: #533b75;" points="1604,186 1604,174 -4,0 -4,0 	"></polygon>--}}
+            {{--</svg>--}}
+        {{--</div>--}}
     </div>
 @endsection

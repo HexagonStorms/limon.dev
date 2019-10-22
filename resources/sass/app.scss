@@ -17,6 +17,7 @@ body {
     background: white;
     font-family: 'Coustard', serif;
     color: $offwhite;
+    height: 15000px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -43,8 +44,9 @@ p {
 // WORK SECTION
 .work-section {
     padding-top: 50px;
-    height: 1100px;
+    height: 800px;
     padding-bottom: 10rem;
+    z-index: 10;
 }
 .features {
     margin-top: 25px;
@@ -63,13 +65,24 @@ p {
     margin-bottom: 10px;
     color: white;
 }
+.stalactite-1 {
+    bottom: -200px !important;
+    z-index: 5;
+}
+.stalactite-2 {
+    bottom: -205px !important;
+    z-index: 0;
+}
+.stalactite-3 {
+    bottom: -100px !important;
+}
 
 /** Custom border markers per screen **/
 @include media-breakpoint-only(xl) {
     .feature-block:nth-child(-n+4) {
         border-bottom: 1px solid $lightblue;
     }
-    .feature-block:nth-child(-n+3), .feature-block:nth-last-child(-n+4) {
+    .feature-block:nth-child(-n+3), .feature-block:nth-last-child(2), .feature-block:nth-last-child(3), .feature-block:nth-last-child(4) {
         border-right: 1px solid $lightblue;
     }
 }

@@ -10648,6 +10648,7 @@ body {
   background: white;
   font-family: "Coustard", serif;
   color: #ffffde;
+  height: 15000px;
 }
 
 h1,
@@ -10677,8 +10678,9 @@ p {
 
 .work-section {
   padding-top: 50px;
-  height: 1100px;
+  height: 800px;
   padding-bottom: 10rem;
+  z-index: 10;
 }
 
 .features {
@@ -10702,6 +10704,20 @@ p {
   color: white;
 }
 
+.stalactite-1 {
+  bottom: -200px !important;
+  z-index: 5;
+}
+
+.stalactite-2 {
+  bottom: -205px !important;
+  z-index: 0;
+}
+
+.stalactite-3 {
+  bottom: -100px !important;
+}
+
 /** Custom border markers per screen **/
 
 @media (min-width: 1200px) {
@@ -10710,7 +10726,9 @@ p {
   }
 
   .feature-block:nth-child(-n+3),
-  .feature-block:nth-last-child(-n+4) {
+  .feature-block:nth-last-child(2),
+  .feature-block:nth-last-child(3),
+  .feature-block:nth-last-child(4) {
     border-right: 1px solid #6d93c2;
   }
 }

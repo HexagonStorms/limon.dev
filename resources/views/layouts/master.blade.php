@@ -6,6 +6,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Coustard|Miriam+Libre:700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/css/app.css">
+    <link rel="stylesheet" type="text/css" href="/css/fontawesome-all.min.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
     <meta name="csrf-token" content="{{ csrf_token() }}">

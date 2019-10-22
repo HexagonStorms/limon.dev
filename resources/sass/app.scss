@@ -9,6 +9,9 @@
 @import '~bootstrap/scss/bootstrap';
 
 $offwhite: #ffffde;
+$lightblue: #6d93c2;
+$darkpurple: #30092d;
+$grey: #696969;
 
 body {
     background: white;
@@ -19,7 +22,11 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Miriam Libre', sans-serif;
     text-transform: uppercase;
-    color: $offwhite;
+    color: white;
+}
+
+h2 {
+    font-size: 4em;
 }
 
 p {
@@ -32,9 +39,62 @@ p {
     // this should be media queried to be much smaller on mobile devices
     padding-bottom: 15rem;
 }
-.create-section {
-    padding-top: 2.5rem;
+
+// WORK SECTION
+.work-section {
+    padding-top: 50px;
+    height: 1100px;
     padding-bottom: 10rem;
+}
+.features {
+    margin-top: 25px;
+}
+.feature-block {
+    padding: 25px;
+}
+.feature-header {
+    color: white;
+}
+.feature-icon-box {
+    display: inline-block;
+    padding: 25px;
+    background-color: $darkpurple;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+/** Custom border markers per screen **/
+@include media-breakpoint-only(xl) {
+    .feature-block:nth-child(-n+4) {
+        border-bottom: 1px solid $lightblue;
+    }
+    .feature-block:nth-child(-n+3), .feature-block:nth-last-child(-n+4) {
+        border-right: 1px solid $lightblue;
+    }
+}
+@include media-breakpoint-only(lg) {
+    .feature-block:nth-child(-n+6) {
+        border-bottom: 1px solid $lightblue;
+    }
+    .feature-block:nth-child(-n+4), .feature-block:nth-last-child(-n+4) {
+        border-right: 1px solid $lightblue;
+    }
+}
+@include media-breakpoint-only(md) {
+    .feature-block:nth-child(-n+6) {
+        border-bottom: 1px solid $lightblue;
+    }
+    .feature-block:nth-child(odd) {
+        border-right: 1px solid $lightblue;
+    }
+}
+
+.feature-border-top {
+    border-top: 1px solid $lightblue;
+}
+.feature-border-right {
+    border-right: 1px solid $lightblue;
 }
 
 .parallax {
@@ -143,17 +203,17 @@ blurb
 }
 #blurb h2 span.line-1 {
     font-weight: 200;
-    font-size: 100px;
+    font-size: 70px;
     line-height: 100%;
 
 }
 #blurb h2 span.line-2 {
     font-weight: 300;
-    font-size: 120px;
+    font-size: 90px;
 }
 #blurb h2 span.line-3 {
     font-weight: 700;
-    font-size: 140px;
+    font-size: 110px;
     margin-top: 6px;
 }
 #blurb hr {
